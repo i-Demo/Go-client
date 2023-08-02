@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-rubik text-Black;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-Yellow px-5 py-4 rounded-full text-sm font-bold whitespace-nowrap cursor-pointer h-[46px] min-w-[46px] flex justify-center items-center hover:btn-shadow hover:bg-[#f8d43f] transition-all duration-[250] ease-linear;
+    }
+    .card {
+        @apply bg-White box-border w-[300px] minimoblie:w-[380px] minimoblie:h-[660px] mb-5 rounded-[30px] px-7 relative before:card-before overflow-hidden;
+    }
+}
+
+@layer utilities {
+    .btn-shadow {
+        box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+    }
+    .card-shadow {
+        box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02), 0 7px 5.4px rgba(0, 0, 0, 0.028),
+            0 12.1px 10.1px rgba(0, 0, 0, 0.035), 0 19.8px 18.1px rgba(0, 0, 0, 0.042),
+            0 34.7px 33.8px rgba(0, 0, 0, 0.05), 0 81px 81px rgba(0, 0, 0, 0.07);
+    }
+    .layout {
+        content: "";
+        display: block;
+        position: fixed;
+        width: 300%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        transform: translateX(-50%) skewY(-8deg);
+        background-color: #f6c90e;
+        z-index: -1;
+        -webkit-animation: wave 8s ease-in-out infinite alternate;
+        animation: wave 8s ease-in-out infinite alternate;
+    }
+    .card-before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 316px;
+        height: 316px;
+        border-radius: 100%;
+        background-color: #f6c90e;
+        top: -20%;
+        left: -50%;
+        z-index: 0;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .cart-item-filter {
+        filter: drop-shadow(0 30px 20px rgba(0, 0, 0, 0.2));
+    }
+}
