@@ -1,7 +1,7 @@
   <h1 align="center"><b>GSneaker</b></h1>
 
   - ### Link Git: https://github.com/i-Demo/GO-client
-  - ### Link Demo: https://gosneaker.netlify.app/
+  - ### Link Demo: https://goshoe.netlify.app/
   
   - ### Hướng dẫn cài đặt
     1. Clone project: https://github.com/i-Demo/GO-client.git
